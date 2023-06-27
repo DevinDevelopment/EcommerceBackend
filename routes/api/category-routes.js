@@ -38,7 +38,6 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   // create a new category
   try {
-    // Since the model will create a unique UUID value by default, we just need to provide the `id` of the Reader that will own this card
     const categoryData = await Category.create({
       category_name: req.body.category_name,
     });
@@ -56,7 +55,7 @@ router.put('/:id', (req, res) => {
       category_name: req.body.category_name,
     },
     {
-      // Gets a book based on the book_id given in the request parameters
+      // Gets a category based on the book_id given in the request parameters
       where: {
         id: req.params.id,
       },
