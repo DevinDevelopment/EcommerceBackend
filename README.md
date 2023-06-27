@@ -9,10 +9,9 @@ git: https://github.com/devv-nunn
 
 ## Description
 
-In this project we will be assisting with crating a backend application for a ecommerce site.
+In this project we will be assisting with crating a backend application for a ecommerce website.
 
 We will be using the sequalize ORM to populate and make changes to our database using routes and CRUD operations.
-We also use Mysql12 to get access to the functions that allow use to perform quieries in our node file.
 
 In this project we learned more about the sequalize ORM and how we can use it to make database changes. 
 ## Table of Contents (Optional)
@@ -25,13 +24,22 @@ N/a
 
 - Clone the following repository after installing vs.code and node.js 
 
-- in terminal run npm i as it will download necessary dependencies such as express and mysql12
+- in terminal run npm i as it will download necessary dependencies such as express, sequalize, and mysql12
 
 - for mysql download docker and start a mysql container. Documentation on this process online.
 
 ## Usage
 
-To use this application write "node index.js" this will start a series of questions in the command line which will be used to decide which sql query to run
+To use this application start a docker container that will host your sql instance.
+open docker and run mysql in vs.code terminal. (Docker documentation online).
+After connecting to your docker database go to another terminal and run npm i to install all necessary dependencies.
+
+After running npm i start application using nodemon "npm run watch". This will allow server to restart after every change instead of closing and reopening the server for productivity purposes. 
+
+After running the application using nodemon you can then go to insomnia and test your routes. 
+
+We are able to perform all CRUD operations to each of the routes.
+
 ## Application screenshots
 ![Website screenshot](./assets/images/Capture1.PNG)
 
@@ -40,19 +48,18 @@ To use this application write "node index.js" this will start a series of questi
 ## Videos Demonstrating application:
 
 application functionality showcase:
-https://drive.google.com/file/d/1hrKjd-XVxv_x2z_B5D5iNi3Oog2eeyRL/view
+https://drive.google.com/file/d/1Jf76aNdXSAlJR0ENvv40R2dS7FPKQBXe/view
 
 
 ## Deployment
 
-Repo: https://github.com/DevinDevelopment/EmployeeTracker
+Repo: https://github.com/DevinDevelopment/EcommerceBackend
 
 # Tech Stack
 
-HTML
-CSS
 JavaScript
 node.js
+Sequalize
 mysql
 
 ## Credits
